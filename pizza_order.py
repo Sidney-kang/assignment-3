@@ -36,7 +36,7 @@ def calculate_cost_of_pizza_touch_up_inside(sender):
     total_cost = subtotal + final_HST
 
     #output
-    view['subtotal_label'].text = "Sub Total: " + "${:,.2f}".format((((subtotal* 100.0) + 0.5)/100.0))
+    view['subtotal_label'].text = "Sub Total: " + "${:,.2f}".format(subtotal)
     view['hst_label'].text = "HST: "+ "${:,.2f}".format((((final_HST * 100.0) + 0.5)/100.0))
     view['total_cost_label'].text = "Total Cost: " + "${:,.2f}".format((((total_cost * 100.0) + 0.5)/100.0))
 
